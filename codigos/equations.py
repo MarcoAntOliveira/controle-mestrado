@@ -20,7 +20,7 @@ tau_L= sp.Function('tau_L')(t)        # torque de carga
 La, Ra = sp.symbols('La Ra')        # indutância e resistência da armadura
 Ke, J, b = sp.symbols('Ke J b')     # constante construtiva, inércia e amortecimento motor
 Kt = sp.symbols('Kt')                # constante construtiva torque
-JL, bL = sp.symbols('JL bL')        # inércia e amortecimento da carga
+Jl, bL = sp.symbols('Jl bL')        # inércia e amortecimento da carga
 
 # === Equações do sistema ===
 eq1 = sp.Eq(Vt, La*ia.diff(t) + Ra*ia + Ea)
